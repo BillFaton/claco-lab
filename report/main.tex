@@ -1,0 +1,58 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[margin=2cm,headheight=15pt]{geometry}
+\usepackage{fancyhdr}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{caption}
+
+\lstset{
+  basicstyle=\ttfamily,
+  keywordstyle=\color{blue!65!black},
+  commentstyle=\color{green!40!black},
+  stringstyle=\color{red!60!black},
+  backgroundcolor=\color{black!3},
+  numbers=left,
+  numberstyle=\footnotesize\color{black!50},
+  showstringspaces=false
+}
+
+\pagestyle{fancy}
+% \fancyhf{} % Clear default header and footer
+
+\fancyhead[L]{\small IMARO}
+\fancyhead[R]{\small CLACO}
+% \renewcommand{\headrulewidth}{0.4pt}
+
+\fancyfoot[L]{\small J. Osei-Asamoah, B. Faton}
+\fancyfoot[C]{\thepage}
+% \renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+% Boxed title on the first page
+\begin{center}
+  \setlength{\fboxsep}{8pt}
+  \setlength{\fboxrule}{1pt}
+  \fbox{%
+    \parbox{0.8\textwidth}{%
+      \centering
+      \Large\bfseries
+      Signal Processing
+    }%
+  }
+\end{center}
+
+\bigskip
+
+\section*{3 The influence of the zeros on the step or frequency responses}
+
+\input{sections/exercise-3_1.tex}
+\input{sections/exercise-3_2.tex}
+\end{document}
