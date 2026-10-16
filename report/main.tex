@@ -12,6 +12,8 @@
 \usepackage{xcolor}
 \usepackage{caption}
 
+\usepackage{pgfplotstable}
+
 \lstset{
   basicstyle=\ttfamily,
   keywordstyle=\color{blue!65!black},
@@ -30,29 +32,31 @@
 \fancyhead[R]{\small CLACO}
 % \renewcommand{\headrulewidth}{0.4pt}
 
-\fancyfoot[L]{\small J. Osei-Asamoah, B. Faton}
+\fancyfoot[L]{\small J. Osei-Asamoah, B. Faton (Group 1)}
 \fancyfoot[C]{\thepage}
 % \renewcommand{\footrulewidth}{0pt}
 
 \begin{document}
 
-% Boxed title on the first page
-\begin{center}
-  \setlength{\fboxsep}{8pt}
-  \setlength{\fboxrule}{1pt}
-  \fbox{%
-    \parbox{0.8\textwidth}{%
-      \centering
-      \Large\bfseries
-      Signal Processing
-    }%
-  }
-\end{center}
+% % Boxed title on the first page
+% \begin{center}
+%   \setlength{\fboxsep}{8pt}
+%   \setlength{\fboxrule}{1pt}
+%   \fbox{%
+%     \parbox{0.8\textwidth}{%
+%       \centering
+%       \Large\bfseries
+%       Classical Controls
+%     }%
+%   }
+% \end{center}
 
-\bigskip
+% \bigskip
 
 \section*{3 The influence of the zeros on the step or frequency responses}
 
 \input{sections/exercise-3_1.tex}
+\clearpage
 \input{sections/exercise-3_2.tex}
+
 \end{document}
