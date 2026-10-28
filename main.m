@@ -5,4 +5,5 @@ clc
 addpath('src');
 addpath('include');
 
-exercise3_1;
+exercise_3_1;
+exercise_3_2;
