@@ -39,8 +39,5 @@ Group ($\alpha$) & Transfer function & $\omega=0$ & $\omega=\alpha$ & $\omega\gg
 In the table, at $\omega=0$ all three have the same phase of about $0^\circ$. As frequency increases the phase curves separate. At $\omega=\alpha$, $G_{c<0}$ has gained a lead of approximately $45^\circ$ on $G$ and $G_{c>0}$ lags $G$ by approximately $45^\circ$, so $G_{c>0}$ lags $G_{c<0}$ by $90^\circ$ (e.g.\ $\alpha=10$: $-118^\circ$, $-163^\circ$, $-208^\circ$). For $\omega\gg\alpha$ the gap widens: $G_{c<0}$ leads $G$ by $90^\circ$ and $G_{c>0}$ lags it by $90^\circ$, giving a difference of $180^\circ$. In general the gap is $2\arctan(\omega/\alpha)$. The size of $\alpha$ matters too. The poles are at 1 and 2 rad/s, so for $\alpha=10$ the zero 
 acts well after the poles and the three curves are close in the useful band. For $\alpha=0.25$ and $0.1$ the zero acts first, giving a large gain increase and a large phase difference at low frequency.
 
-The right-half-plane zero satisfies
-\[
-G_{c=\alpha}(s)=G_{c=-\alpha}(s)\frac{\alpha-s}{\alpha+s},
-\]
+The right-half-plane zero satisfies $G_{c=\alpha}(s)=G_{c=-\alpha}(s)\frac{\alpha-s}{\alpha+s}$
 where the additional factor has unit magnitude but adds \(2\arctan(\omega/\alpha)\) of phase lag. Thus, it gives the same gain but greater phase lag than its left-half-plane counterpart. Of the three systems compared, it has the greatest phase lag and is therefore non-minimum phase. This zero also causes the undershoot observed in Section 3.1.
