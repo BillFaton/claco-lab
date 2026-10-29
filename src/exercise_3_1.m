@@ -1,3 +1,5 @@
+
+
 %% G = 1/((s+1)(0.5s+1))
 
 G = tf(1, [1 1]) * tf(1, [0.5 1]);
@@ -10,6 +12,7 @@ xlim([0 6])
 grid on
 title('Step response G(s)')
 
+theme(gcf, 'light'); 
 exportgraphics(gcf, 'report/figures/3_1/g-step.png');
 
 results = struct2table(info(:));
@@ -35,6 +38,7 @@ grid on
 title('Step response G_c(s)')
 legend(labels)
 
+theme(gcf, 'light'); 
 exportgraphics(gcf, 'report/figures/3_1/g_c-step.png');
 
 results = struct2table(info(:), "RowNames", string(cell2mat(c)));
