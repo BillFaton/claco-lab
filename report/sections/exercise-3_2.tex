@@ -2,9 +2,10 @@
 
 \subsection*{3.2 Frequency response}
 
+1. Frequency Response of Systems
+
 In the graph below we observe the Bode plot of the transfer functions
-$G(s)=\dfrac{1}{(s+1)(0.5s+1)}$ and $G_c(s)=\dfrac{-s+c}{c\,(s+1)(0.5s+1)}$ for $c=-10,\,-0.25,\,-0.1,\,0.1,\,0.25,\,10$.
-The zero of $G_c$ sits at $s=c$, and dividing by $c$ keeps the DC gain at 1, so only the zero placement changes between systems.
+$G(s)$ and $G_c(s)$ for $c=-10,\,-0.25,\,-0.1,\,0.1,\,0.25,\,10$.
 
 \begin{figure}[H]
 \centering
@@ -35,13 +36,8 @@ Group ($\alpha$) & Transfer function & $\omega=0$ & $\omega=\alpha$ & $\omega\gg
 \caption{Phase (degrees) for each triple.}
 \end{table}
  
-In the table, at $\omega=0$ all three have the same phase of about $0^\circ$. As frequency increases the phase curves separate. 
-At $\omega=\alpha$, $G_{c<0}$ has gained a lead of approximately $45^\circ$ on $G$ and $G_{c>0}$ lags $G$ by approximately $45^\circ$, 
-so $G_{c>0}$ lags $G_{c<0}$ by $90^\circ$ (e.g.\ $\alpha=10$: $-118^\circ$, $-163^\circ$, $-208^\circ$). For $\omega\gg\alpha$ the gap widens: 
-$G_{c<0}$ leads $G$ by $90^\circ$ and $G_{c>0}$ lags it by $90^\circ$, giving a difference of $180^\circ$. 
-In general the gap is $2\arctan(\omega/\alpha)$. The size of $\alpha$ matters too. The poles are at 1 and 2 rad/s, so for $\alpha=10$ the zero 
-acts well after the poles and the three curves are close in the useful band. For $\alpha=0.25$ and $0.1$ the zero acts first, giving a large gain 
-increase and a large phase difference at low frequency.
+In the table, at $\omega=0$ all three have the same phase of about $0^\circ$. As frequency increases the phase curves separate. At $\omega=\alpha$, $G_{c<0}$ has gained a lead of approximately $45^\circ$ on $G$ and $G_{c>0}$ lags $G$ by approximately $45^\circ$, so $G_{c>0}$ lags $G_{c<0}$ by $90^\circ$ (e.g.\ $\alpha=10$: $-118^\circ$, $-163^\circ$, $-208^\circ$). For $\omega\gg\alpha$ the gap widens: $G_{c<0}$ leads $G$ by $90^\circ$ and $G_{c>0}$ lags it by $90^\circ$, giving a difference of $180^\circ$. In general the gap is $2\arctan(\omega/\alpha)$. The size of $\alpha$ matters too. The poles are at 1 and 2 rad/s, so for $\alpha=10$ the zero 
+acts well after the poles and the three curves are close in the useful band. For $\alpha=0.25$ and $0.1$ the zero acts first, giving a large gain increase and a large phase difference at low frequency.
 
 The right-half-plane zero satisfies
 \[
